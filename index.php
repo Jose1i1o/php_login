@@ -63,7 +63,7 @@
                             echo '</h1>';
                         }elseif ($_GET['logout']) {
                             echo '<h1 class="h4 text-gray-900 mb-4">';
-                            echo 'You have been logged out!';
+                            echo 'We hope to see you back soon!';
                             echo '</h1>';
                         }else{
                             header('Location: ./dashboard.php');
@@ -72,6 +72,17 @@
                     </div>
                     <form class="user" action='./modules/login.php' method='POST'>
                     <div class="form-group">
+                            <input
+                            name="name"
+                            type="name"
+                            class="form-control form-control-user"
+                            id="exampleInputName"
+                            aria-describedby="nameHelp"
+                            placeholder="Enter Your Name..."
+                            required
+                            />
+                        </div>
+                        <div class="form-group">
                         <input
                           name="email"
                           type="email"

@@ -2,7 +2,7 @@
 
     session_start();
 
-    if(!isset($_SESSION['email'])) {
+    if(!isset($_SESSION['name'])) {
         header('Location: ./index.php');
     }
 ?>
@@ -341,7 +341,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                                    <?php echo $_SESSION['email']; ?>
+                                    <b><?php echo $_SESSION['name']; ?></b>
                                 </span>
                                 <img class="img-profile rounded-circle"
                                     src="img/undraw_profile.svg">
@@ -380,7 +380,7 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">
-                            Welcome back, <?php echo $_SESSION['email']; ?>
+                            Welcome back, <?php echo $_SESSION['name']; ?>
                         </h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
@@ -737,7 +737,9 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave,<b> 
+                    <?php echo $_SESSION['name']; ?></b>
+                    ?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
