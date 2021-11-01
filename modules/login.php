@@ -4,17 +4,17 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $emaildb = "scaramouche@bailandofandango.com";
-    $passworddb = "fredymercury";
+    $emailDb = "scaramouche@willyoudothefandango.com";
+    $passwordDb = "galileo";
 
-    $passwordHash = password_hash($passworddb, PASSWORD_DEFAULT);
+    $passwordHash = password_hash($passwordDb, PASSWORD_DEFAULT);
 
-    if(password_verify($password, $passwordHash) && $email === $emaildb){
-        $_SESSION['loggedin'] = true;
-        header("Location: ../dashboard.php");
+    if(password_verify($password, $passwordHash) && $email == $emailDb){
+        $_SESSION['email'] = $email;
+        header('Location: ../dashboard.php');
     } else {
-        $_SESSION['errorMessage'] = "This email or password isn´t in our database";
-        header("Location: ../index.php");
+        $_SESSION['errorMessage'] = "This email or password is not in our database";
+        header('Location: ../index.php');
     }
 
     ?>
