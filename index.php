@@ -1,82 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PHP Document</title>
-    </head>
-    <body style="background-color:white; margin:0rem">
-        <div style="margin:0rem">
-        <div>
-            <h3 style="color: black;text-align: center"><em><u>ADVICE: THIS IS MY FIRST PHP TEST.<br />PLEASE, DON´T JUDGE ME!!.</u></em></h3>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Register</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                    Register Account
+                                </a>
+                                <hr>
+                                <a href="index.html" class="btn btn-google btn-user btn-block">
+                                    <i class="fab fa-google fa-fw"></i> Register with Google
+                                </a>
+                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                </a>
+                            </form>
+                            <hr>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center">
+                                <a class="small" href="login.html">Already have an account? Login!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="background-color:#ffa69e; padding:2rem">
-            <h4>1. Print on screen</h4>
-            <span>
-                <?php require "./src/print.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#faf3dd; padding:2rem">
-            <h4>2. Iterators</h4>
-            <span>
-                <?php require "./src/iterators.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#b8f2e6; padding:2rem">
-            <h4>3. Operators</h4>
-            <span>
-                <?php require "./src/operators.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#aed9e0; padding:2rem">
-            <h4>4. Dates</h4>
-            <span>
-                <?php require "./src/dates.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#ffea9e; padding:2rem;">
-            <h4>5. Conditionals</h4>
-            <span >
-                <?php require "./src/conditionals.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#ecfadc; padding:2rem">
-            <h4>6. Types of variables and data</h4>
-            <span>
-                <?php require "./src/types.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#b8d5f2; padding:2rem">
-            <h4>7. Maths</h4>
-            <span>
-                <?php require "./src/maths.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#afb7e0; padding:2rem">
-            <h4>8. Strings</h4>
-            <span >
-                <?php require "./src/strings.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#b8f2e6; padding:2rem">
-            <h4>9. Arrays</h4>
-            <span>
-                <?php require "./src/arrays.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#eaff9e; padding:2rem">
-            <h4>10. Functions</h4>
-            <span >
-                <?php require "./src/functions.php" ?>
-            </span>
-        </div>
-        <div style="background-color:#ffa69e; padding:2rem">
-            <h4>11. Php Info</h4>
-            <span>
-                <?php require "./src/phpinfo.php" ?>
-            </span>
-        </div>
-        </div>
-    </body>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
 </html>
